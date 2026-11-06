@@ -1,0 +1,56 @@
+{
+  "sourceFile": "creative_hse_2026 - жилье клнгрд.csv",
+  "sourceSHA256": "b24ba7bed79a39383924f0def0b6e11b1baa8926a5cfb889452029d956b3584b",
+  "inputRows": 50,
+  "inputColumns": 23,
+  "uniqueIds": 50,
+  "exactDuplicateRows": 0,
+  "playableCount": 49,
+  "photoCount": 244,
+  "photoBytes": 1233818,
+  "priceMin": 1850,
+  "priceMedian": 2900,
+  "priceMax": 4500,
+  "semanticColumnCollisions": [
+    {
+      "sourceRow": 32,
+      "id": "7724019487",
+      "field": "rating",
+      "actualMeaning": "secondary_price",
+      "value": 3500,
+      "interpretation": "Additional currency value in rating column; whether this is a former price is not established by the CSV."
+    }
+  ],
+  "sourceAvailability": "unknown",
+  "scrapeDate": "unknown",
+  "stayDates": [
+    "2026-11-14",
+    "2026-11-15"
+  ],
+  "guests": 2,
+  "excluded": [
+    {
+      "sourceRow": 11,
+      "id": "4659286506",
+      "price": 13000,
+      "reason": "themed_nonstandard_accommodation"
+    }
+  ],
+  "photoErrors": [
+    {
+      "id": "4558168813",
+      "position": 4,
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "removedFields": [
+    "CSS-class headers",
+    "more-photo counter",
+    "host badges",
+    "host names and profile links",
+    "host ratings",
+    "video and duplicated thumbnails",
+    "advertising descriptions"
+  ],
+  "outlierPolicy": "Outliers reviewed against description. No price-based automatic deletion. The 13000 RUB record describes a themed venue for adults, not standard accommodation; excluded for game scope."
+}
